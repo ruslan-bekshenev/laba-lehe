@@ -1,10 +1,11 @@
+"use strict";
 var WikiArticle = /** @class */ (function () {
     function WikiArticle(title, url, text) {
         this.title = '';
         this.url = '';
         this.text = '';
         this.title = title;
-        this.url = text;
+        this.url = url;
         this.text = text;
     }
     WikiArticle.prototype.clone = function () {
@@ -16,3 +17,4 @@ var nature = new WikiArticle('Природа', 'https://wikipedia.com/nature', '
 var cloneNature = nature.clone();
 cloneNature.title = 'Nature 2';
 console.log(nature, cloneNature);
+//# sourceMappingURL=prototype.js.map
